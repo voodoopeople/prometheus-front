@@ -1,0 +1,19 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+section {
+  display: table;
+}
+
+/*Центрирование основного блока*/
+.centered-grid {
+  margin-top: 7px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.white-icon {
+  color: white;
+}

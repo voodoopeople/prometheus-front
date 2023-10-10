@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {LoginLogoutProcessingComponent} from "./singletones/login-logout-processing/login-logout-processing.component";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'prometheus';
+
+  showElement$ = this.visibilityService.showElement$;
+
+  constructor(private visibilityService: LoginLogoutProcessingComponent) {}
+
+  toggleVisibility() {
+    this.visibilityService.toggleVisibility();
+  }
 }
