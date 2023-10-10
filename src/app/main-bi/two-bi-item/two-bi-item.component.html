@@ -1,0 +1,29 @@
+<mat-grid-list cols="1" rowHeight="800px" class="fixed-width-grid">
+  <mat-grid-tile colspan="1" class="worker-grid">
+
+    <mat-card class="example-card">
+      <mat-card-header class="center-text">
+        <mat-card-title >Точность и повторяемость результатов</mat-card-title>
+      </mat-card-header>
+      <div class="download-container">
+        <mat-icon svgIcon="doc-icon" class="doc-icon"></mat-icon>
+        <mat-icon svgIcon="pdf-icon" class="pdf-icon"></mat-icon>
+      </div>
+      <mat-card-content>
+        <ngx-charts-pie-chart
+          [results]="saleData"
+          [legend]="true"
+          [legendTitle]="'Product Sale Report'"
+          [view]="[700,300]"
+          [labels]="true" >
+        </ngx-charts-pie-chart>
+      </mat-card-content>
+      <mat-card-footer>
+        <div class="chart-description">
+          <p>Для оборудования, выполняющего точные операции, мониторинг точности и повторяемости может помочь обеспечить, что оно продолжает работать в пределах требуемых спецификаций и стандартов.</p>
+        </div>
+
+      </mat-card-footer>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

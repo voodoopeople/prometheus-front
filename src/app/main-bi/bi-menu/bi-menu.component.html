@@ -1,0 +1,24 @@
+<mat-grid-list cols="5" rowHeight="800px" class="fixed-width-grid">
+  <mat-grid-tile class="menu" colspan="1">
+    <mat-list style="width: 200px;" >
+      <a mat-list-item class="list-item-text" [routerLink]="[{ outlets: { bi: ['onebi'] } }]">Эффективность оборудования (OEE)</a>
+      <p></p>
+      <a mat-list-item class="list-item-text" [routerLink]="[{ outlets: { bi: ['twobi'] } }]">Точность и повторяемость результатов</a>
+      <p></p>
+      <a mat-list-item class="list-item-text" [routerLink]="[{ outlets: { bi: ['threbi'] } }]">Состояние обслуживания</a>
+      <p></p>
+      <a mat-list-item class="list-item-text" [routerLink]="[{ outlets: { bi: ['fourbi'] } }]">Процент использования</a>
+      <p></p>
+      <a matLine mat-list-item class="list-item-text" [routerLink]="[{ outlets: { bi: ['fivebi'] } }]">Расход энергии на единицу продукции</a>
+      <p></p>
+      <a mat-list-item class="list-item-text" [routerLink]="[{ outlets: { bi: ['sixbi'] } }]">Статистика загрязнений выбросов</a>
+      <p></p>
+      <a mat-list-item class="list-item-text" [routerLink]="[{ outlets: { bi: ['sevenbi'] } }]">Результаты неразрушающего контроля</a>
+
+    </mat-list>
+  </mat-grid-tile>
+  <mat-grid-tile class="worker-grid" colspan="4">
+    <router-outlet name="bi">  </router-outlet>
+  </mat-grid-tile>
+</mat-grid-list>
+

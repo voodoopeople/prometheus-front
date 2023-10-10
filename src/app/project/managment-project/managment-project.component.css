@@ -1,0 +1,118 @@
+/*Центрирование основного блока*/
+.fixed-width-grid {
+  width: 1000px;  /* Установите нужную вам ширину */
+}
+
+/*Login card*/
+mat-card {
+  padding-top: 75px;
+  background-color: rgb(255, 255, 255);
+  max-width: 780px;
+  min-height: 400px;
+}
+
+.mat-form-field {
+  width: 100%;
+  min-width: 1500px;
+}
+
+mat-card-title{
+  font-weight: 900;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+/*mat-card-content {
+  display: flex;
+  justify-content: center;
+}*/
+
+.menu {
+  background-color: rgba(63, 81, 181, 0.9);
+}
+
+.worker-grid {
+  border-style: solid;  /* тип границы */
+  border-width: 1px;    /* толщина границы */
+  border-color: rgba(63, 81, 181, 0.2);   /* цвет границы */
+  border-bottom-color: snow;
+  background-color: rgba(255, 255, 2555);
+}
+
+
+/*Центрирование основного блока*/
+
+/*Картинка во всю ширину в бэкграунде*/
+/*mat-grid-tile {
+  background-size: cover;  !* Это свойство CSS гарантирует, что изображение будет масштабировано так, чтобы его ширина и высота соответствовали ширине и высоте mat-grid-tile *!
+  background-position: center;  !* Это свойство CSS гарантирует, что изображение будет выровнено по центру mat-grid-tile *!
+}*/
+
+
+
+/*.error {
+  padding: 16px;
+  width: 300px;
+  color: white;
+  background-color: red;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+a {
+  color: rgb(255, 255, 255);
+}*/
+
+
+
+/*
+.project-title {
+  min-width: 450px;
+  float: left;
+}
+
+.project-description {
+  min-width: 780px;
+  float: left;
+}
+
+.pdf-icon {
+  width: 60px;
+  height: 60px;
+
+}
+
+.doc-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.download-container {
+  padding-bottom: 40px;
+  min-width: 750px;
+}
+
+.example-card {
+  max-width: 270px;
+  max-height: 100px;
+  box-shadow: none;
+}
+
+.download-button {
+  margin-right: 30px;
+  margin-bottom: 50px;
+}
+
+.download-image {
+  justify-content: center;
+}
+
+
+
+*/

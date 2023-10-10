@@ -1,0 +1,51 @@
+<mat-grid-list cols="1" rowHeight="800px" class="fixed-width-grid">
+  <mat-grid-tile  class="worker-grid">
+    <!--<mat-list>
+      <mat-list-item>
+        <span matListItemTitle>Pepper</span>
+        <span matListItemLine>Produced by a plant</span>
+      </mat-list-item>
+      <mat-list-item>
+        <span matListItemTitle>Salt</span>
+        <span matListItemLine>Extracted from sea water</span>
+      </mat-list-item>
+      <mat-list-item>
+        <span matListItemTitle>Paprika</span>
+        <span matListItemLine>Produced by dried and ground red peppers</span>
+      </mat-list-item>
+    </mat-list>-->
+
+
+    <cdk-accordion class="example-accordion" style="width: 500px">
+      <cdk-accordion-item
+        *ngFor="let item of items; let index = index;"
+        #accordionItem="cdkAccordionItem"
+        class="example-accordion-item"
+        role="button"
+        tabindex="0"
+        [attr.id]="'accordion-header-' + index"
+        [attr.aria-expanded]="accordionItem.expanded"
+        [attr.aria-controls]="'accordion-body-' + index">
+        <div class="example-accordion-item-header" (click)="accordionItem.toggle()">
+          {{ item }}
+          <span class="example-accordion-item-description">
+        Нажмите для {{ accordionItem.expanded ? 'закрытия' : 'открытия' }}
+      </span>
+        </div>
+        <div
+          class="example-accordion-item-body"
+          role="region"
+          [style.display]="accordionItem.expanded ? '' : 'none'"
+          [attr.id]="'accordion-body-' + index"
+          [attr.aria-labelledby]="'accordion-header-' + index">
+          <a [routerLink]="['/themenu']" mat-button>
+          Perferendis
+          excepturi incidunt ipsum deleniti labore, tempore non nam doloribus blanditiis
+          veritatis illo autem iure aliquid ullam rem tenetur deserunt velit culpa? </a>
+        </div>
+      </cdk-accordion-item>
+    </cdk-accordion>
+
+
+  </mat-grid-tile>
+</mat-grid-list>

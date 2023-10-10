@@ -1,0 +1,49 @@
+/*Центрирование основного блока*/
+.fixed-width-grid {
+  width: 1000px;  /* Установите нужную вам ширину */
+}
+/*Центрирование основного блока*/
+
+/*Картинка во всю ширину в бэкграунде*/
+mat-grid-tile {
+  background-size: cover;  /* Это свойство CSS гарантирует, что изображение будет масштабировано так, чтобы его ширина и высота соответствовали ширине и высоте mat-grid-tile */
+  background-position: center;  /* Это свойство CSS гарантирует, что изображение будет выровнено по центру mat-grid-tile */
+}
+
+/*Login card*/
+mat-card {
+  padding-top: 75px;
+  background-color: rgba(63, 81, 181, 0.45);
+  min-width: 350px;
+  min-height: 400px;
+}
+
+.mat-form-field {
+  width: 100%;
+  min-width: 1500px;
+}
+
+mat-card-title{
+  font-weight: 900;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+mat-card-content {
+  display: flex;
+  justify-content: center;
+}
+
+.error {
+  padding: 16px;
+  width: 300px;
+  color: white;
+  background-color: red;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
+/*Login card*/

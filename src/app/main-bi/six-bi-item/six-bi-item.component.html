@@ -1,0 +1,35 @@
+<mat-grid-list cols="1" rowHeight="800px" class="fixed-width-grid">
+  <mat-grid-tile colspan="1" class="worker-grid">
+
+    <mat-card class="example-card">
+      <mat-card-header class="center-text">
+        <mat-card-title >Статистика загрязнений выбросов</mat-card-title>
+      </mat-card-header>
+      <div class="download-container">
+        <mat-icon svgIcon="doc-icon" class="doc-icon"></mat-icon>
+        <mat-icon svgIcon="pdf-icon" class="pdf-icon"></mat-icon>
+      </div>
+      <mat-card-content>
+        <ngx-charts-bar-horizontal
+          [view]="[700,400]"
+          [results]="saleData"
+          [xAxisLabel]="'Products'"
+          [legendTitle]="'Product Sale Chart'"
+          [yAxisLabel]="'Sale'"
+          [legend]="true"
+          [showXAxisLabel]="true"
+          [showYAxisLabel]="true"
+          [xAxis]="true"
+          [yAxis]="true"
+          [gradient]="true">
+        </ngx-charts-bar-horizontal>
+      </mat-card-content>
+      <mat-card-footer>
+        <div class="chart-description">
+          <p>Мониторинг уровня загрязняющих веществ, выбрасываемых в процессе работы оборудования, необходим для управления воздействием на окружающую среду и контролем за соблюдением экологических нормативов. </p>
+        </div>
+
+      </mat-card-footer>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

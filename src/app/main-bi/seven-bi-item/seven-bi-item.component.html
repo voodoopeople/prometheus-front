@@ -1,0 +1,29 @@
+<mat-grid-list cols="1" rowHeight="800px" class="fixed-width-grid">
+  <mat-grid-tile colspan="1" class="worker-grid">
+
+    <mat-card class="example-card">
+      <mat-card-header class="center-text">
+        <mat-card-title >Результаты неразрушающего контроля</mat-card-title>
+      </mat-card-header>
+      <div class="download-container">
+        <mat-icon svgIcon="doc-icon" class="doc-icon"></mat-icon>
+        <mat-icon svgIcon="pdf-icon" class="pdf-icon"></mat-icon>
+      </div>
+      <mat-card-content>
+        <ngx-charts-bubble-chart
+          [results]="data"
+          [view]="[700, 400]"
+          [xAxis]="true"
+          [yAxis]="true"
+          [showGridLines]="true">
+        </ngx-charts-bubble-chart>
+      </mat-card-content>
+      <mat-card-footer>
+        <div class="chart-description">
+          <p>Регулярное проведение и мониторинг результатов неразрушающего контроля оборудования может помогает выявлять потенциальные проблемы и износ до того, как они станут серьезными.</p>
+        </div>
+
+      </mat-card-footer>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

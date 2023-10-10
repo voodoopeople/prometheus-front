@@ -1,0 +1,27 @@
+ <mat-grid-list cols="1" rowHeight="800px" class="fixed-width-grid" [style.background]="'url(assets/AutomotiveAfterUpscale.jpg)'">
+    <mat-grid-tile>
+      <mat-card>
+        <mat-card-title color="warn">Login</mat-card-title>
+        <mat-card-content>
+          <form>
+            <p>
+              <mat-form-field>
+                <input type="text" matInput placeholder="Username" formControlName="username">
+              </mat-form-field>
+            </p>
+
+            <p>
+              <mat-form-field>
+                <input type="password" matInput placeholder="Password" formControlName="password">
+              </mat-form-field>
+            </p>
+
+            <div class="button">
+              <button type="submit" mat-raised-button color="primary"  [routerLink]="['/projectmenu']" mat-button (click)="toggleVisibility()">Login</button>
+            </div>
+
+          </form>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>

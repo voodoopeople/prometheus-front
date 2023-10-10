@@ -1,0 +1,78 @@
+<mat-grid-list cols="5" rowHeight="800px" class="fixed-width-grid">
+  <mat-grid-tile class="menu" colspan="1">
+    <mat-nav-list >
+      <a mat-list-item [routerLink]="[{ outlets: { project: ['editproject'] } }]">Карточка проекта</a>
+      <a mat-list-item [routerLink]="[{ outlets: { project: ['behavior'] } }]">Поведение</a>
+      <a mat-list-item [routerLink]="[{ outlets: { project: ['behavior'] } }]">Схема</a>
+      <a mat-list-item (click)="openPopUp()">Скрипты</a>
+      <a mat-list-item [routerLink]="['/list']">Устройства</a>
+      <a mat-list-item [routerLink]="['/list']">Аналитика проекта</a>
+    </mat-nav-list>
+  </mat-grid-tile>
+  <mat-grid-tile class="worker-grid" colspan="4">
+
+
+    <!--<mat-grid-list cols="5" class="fixed-width-grid">
+      <mat-grid-tile colspan="3"  class="title" rowspan="1" >
+        <mat-form-field appearance="outline" class="project-title">
+          <mat-label>Название проекта: введите не более 150 символов</mat-label>
+          <textarea cdkTextareaAutosize cdkAutosizeMinRows="6"
+                    cdkAutosizeMaxRows="10" matInput placeholder="title"
+                    formControlName="address"></textarea>
+        </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile colspan="2" rowspan="2">
+        <mat-card class="example-card">
+          <img mat-card-image src="assets/puzzle-2.jpg" alt="Photo of a Shiba Inu">
+
+          <mat-card-actions class="download-image">
+            <button mat-stroked-button color="primary" >Загрузить изображение</button>
+          </mat-card-actions>
+        </mat-card>
+
+      </mat-grid-tile>
+
+      <mat-grid-tile colspan="3"  class="title" rowspan="1" >
+        <mat-form-field appearance="outline" class="project-title">
+          <mat-label>Название проекта: введите не более 150 символов</mat-label>
+          <textarea cdkTextareaAutosize cdkAutosizeMinRows="6"
+                    cdkAutosizeMaxRows="10" matInput placeholder="title"
+                    formControlName="address"></textarea>
+        </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile colspan="5">
+        <mat-form-field appearance="outline" class="project-description">
+          <mat-label>Описание проекта: введите не более 300 символов</mat-label>
+          <textarea cdkTextareaAutosize cdkAutosizeMinRows="6"
+                    cdkAutosizeMaxRows="10" matInput placeholder="title"
+                    formControlName="address"></textarea>
+        </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile colspan="5">
+        <mat-form-field appearance="outline" class="project-description">
+          <mat-label>Описание проекта: введите не более 300 символов</mat-label>
+          <textarea cdkTextareaAutosize cdkAutosizeMinRows="6"
+                    cdkAutosizeMaxRows="10" matInput placeholder="title"
+                    formControlName="address"></textarea>
+        </mat-form-field>
+      </mat-grid-tile>
+
+      <mat-grid-tile colspan="5">
+        <div class="download-container">
+          <button mat-stroked-button color="primary" class="download-button">Загрузить файл</button>
+          <mat-icon svgIcon="doc-icon" class="doc-icon"></mat-icon>
+          <mat-icon svgIcon="doc-icon" class="doc-icon"></mat-icon>
+          <mat-icon svgIcon="doc-icon" class="doc-icon"></mat-icon>
+          <mat-icon svgIcon="pdf-icon" class="pdf-icon"></mat-icon>
+          <mat-icon svgIcon="doc-icon" class="doc-icon"></mat-icon>
+          <mat-icon svgIcon="doc-icon" class="doc-icon"></mat-icon>
+          <mat-icon svgIcon="pdf-icon" class="pdf-icon"></mat-icon>
+          <mat-icon svgIcon="pdf-icon" class="pdf-icon"></mat-icon>
+        </div>
+      </mat-grid-tile>
+
+    </mat-grid-list>-->
+    <router-outlet name="project">  </router-outlet>
+  </mat-grid-tile>
+</mat-grid-list>
+
