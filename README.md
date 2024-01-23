@@ -1,4 +1,9 @@
 # Prometheus
+!!!!ВАЖНО!!!!
+Этот проект использует внешний редактор для создания и управления сосояниями SM.
+https://github.com/voodoopeople/external-editor-for-sm-cyeditor.git
+Скачать и запустить на: localhost:8080 (встает по умолчанию)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
 
