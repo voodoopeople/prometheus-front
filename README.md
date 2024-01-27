@@ -1,3 +1,5 @@
+https://stackblitz.com/edit/ngx-graph-simple-example?file=app%2Fapp.component.html,app%2Fapp.component.ts
+
 # Prometheus
 !!!!!ВАЖНО!!!!!
 Этот проект использует внешний редактор для создания и управления сосояниями SM.

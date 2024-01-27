@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { AppComponent } from './app.component';
 import { EditProjectComponent } from './project/edit-project/edit-project.component';
 import { ListProjectComponent } from './menu-project/list-project/list-project.component';
@@ -32,6 +33,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { BehaviorComponent } from './project/behavior/behavior.component';
 import { SchemaComponent } from './project/schema/schema.component';
 import {MatDialogModule} from "@angular/material/dialog";
+import { NgxGraphModule } from '@swimlane/ngx-graph';
+import { MatSelectModule } from '@angular/material/select';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+
 
 
 const routes: Routes = [
@@ -83,6 +88,11 @@ const routes: Routes = [
     SchemaComponent,
   ],
   imports: [
+    MatCheckboxModule,
+    MatSelectModule,
+    BrowserAnimationsModule,
+    MatSidenavModule,
+    NgxGraphModule,
     BrowserModule,
     BrowserAnimationsModule,
     MatGridListModule,
